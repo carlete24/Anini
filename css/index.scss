@@ -5,10 +5,15 @@
 }
 
 body {
-    background: pink;
-    color: white;
+    color: #EE85B5;
     font-size: 32px;
-    font-family: 'Mali', bold;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+p::selection {
+    background: #EE85B5;
+    color: white;
 }
 
 a {
@@ -24,12 +29,12 @@ ul {
 /*Nav*/
 
 .nav-principal {
-    
+    background-color: #EE85B5;
     font-size: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100px;
     padding: 20px 0;
 }
 
@@ -44,11 +49,11 @@ ul {
 }
 
 .nav-principal ul li a {
-    padding: 32px;
+    padding: 24px;
 }
 
 .nav-principal ul li a:hover {
-    background-color: #946c8f;
+    background-color: #FF958C;
 }
 
 .nav-principal ul.menu {
@@ -57,5 +62,5 @@ ul {
 }
 
 .nav-principal img {
-    width: 128px;
+    width: 200px;
 }
