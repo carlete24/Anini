@@ -77,4 +77,75 @@ ul {
 .nav-principal img {
   width: 200px;
 }
+
+/*Div Posts*/
+.posts {
+  padding: 120px;
+}
+
+.publicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.descripcion {
+  float: left;
+}
+
+.imagen {
+  width: 600px;
+  height: 800px;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 10px 15px black;
+          box-shadow: 1px 10px 15px black;
+}
+
+.imagen img {
+  background-color: none;
+  width: 800px;
+  height: 100%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.imagen img:hover {
+  -webkit-transform: translate(-5%);
+          transform: translate(-5%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+}
+
+/*Footer*/
+.footer {
+  background-color: black;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer div {
+  padding: 30px;
+}
+
+.footer ul li a:hover {
+  border-bottom: 1px solid white;
+}
+
+.footer h4 {
+  font-size: 20px;
+}
 /*# sourceMappingURL=index.css.map */

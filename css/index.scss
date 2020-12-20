@@ -64,3 +64,61 @@ ul {
 .nav-principal img {
     width: 200px;
 }
+
+/*Div Posts*/
+
+.posts {
+    padding: 120px;
+}
+
+.publicacion {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.descripcion {
+    float: left;
+}
+
+.imagen {
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 1px 10px 15px rgba($color: #000000, $alpha: 1.0);
+}
+
+.imagen img {
+    background-color: none;
+    width: 800px;
+    height: 100%;
+    transition: 2s;
+}
+
+.imagen img:hover {
+    transform: translate(-5%);
+    filter: brightness(80%);
+}
+
+/*Footer*/
+
+.footer {
+    background-color: black;
+    font-size: 16px;
+    display: flex;
+    padding: 50px 50px;
+    align-items: center;
+}
+
+.footer div {
+    padding: 30px;
+}
+.footer ul li a:hover {
+    border-bottom: 1px solid white;
+}
+
+.footer h4 {
+    font-size: 20px;
+}
