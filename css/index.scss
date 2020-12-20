@@ -18,4 +18,44 @@ a {
 
 ul {
     list-style: none;
+    margin: auto;
+}
+
+/*Nav*/
+
+.nav-principal {
+    
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 20px 0;
+}
+
+/*Menu izquerda*/
+
+.nav-principal ul {
+    display: flex;
+}
+
+.nav-principal ul li {
+    padding: 10px;
+}
+
+.nav-principal ul li a {
+    padding: 32px;
+}
+
+.nav-principal ul li a:hover {
+    background-color: #946c8f;
+}
+
+.nav-principal ul.menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.nav-principal img {
+    width: 128px;
 }
