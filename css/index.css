@@ -8,10 +8,16 @@
 body {
   background: pink;
   color: white;
+  font-size: 32px;
+  font-family: 'Mali', bold;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 /*# sourceMappingURL=index.css.map */

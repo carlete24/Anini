@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,9 +7,15 @@
 body {
     background: pink;
     color: white;
+    font-size: 32px;
+    font-family: 'Mali', bold;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
