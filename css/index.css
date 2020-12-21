@@ -49,25 +49,25 @@ ul {
 }
 
 /*Menu izquerda*/
-.nav-principal ul {
+.menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-principal ul li {
+.menu li {
   padding: 10px;
 }
 
-.nav-principal ul li a {
+.menu li a {
   padding: 24px;
 }
 
-.nav-principal ul li a:hover {
+.nav-principal li a:hover {
   background-color: #FF958C;
 }
 
-.nav-principal ul.menu {
+.menu {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -150,5 +150,139 @@ ul {
 
 .footer h4 {
   font-size: 20px;
+}
+
+/*Movil*/
+#menuMovil {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .publicacion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imagen {
+    width: 200%;
+    overflow: hidden;
+  }
+  .imagen img {
+    width: 800px;
+    height: 100%;
+    -webkit-transform: translate(-10%);
+            transform: translate(-10%);
+  }
+  .imagen img:hover {
+    -webkit-transform: translate(-15%);
+            transform: translate(-15%);
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+  }
+  #menuMovil {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  #menuMovil input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 42px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 102;
+    top: -10px;
+    left: -10px;
+  }
+  #menuMovil span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 101;
+    -webkit-transform-origin: 5px 0px;
+            transform-origin: 5px 0px;
+    -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menuMovil span:first-child {
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+  }
+  #menuMovil input:nth-last-child(2) {
+    -webkit-transform-origin: 0% -100%;
+            transform-origin: 0% -100%;
+  }
+  #menuMovil input:checked ~ span {
+    opacity: 1;
+    -webkit-transform: rotate(45deg) translate(-3px, -1px);
+            transform: rotate(45deg) translate(-3px, -1px);
+    background: #fff;
+  }
+  #menuMovil input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+            transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  #menuMovil input:checked ~ span:nth-last-child(2) {
+    -webkit-transform: rotate(-45deg) translate(0, -1px);
+            transform: rotate(-45deg) translate(0, -1px);
+  }
+  #menuMovil ul {
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    -webkit-box-shadow: 0 0 5px #000000;
+            box-shadow: 0 0 5px #000000;
+    margin: -50px 0 0 -75px;
+    padding: 50px;
+    padding-top: 15vh;
+    text-align: center;
+    font-size: 150%;
+    background: #EE85B5;
+    -webkit-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    -webkit-transform: translate(-100%, -100%);
+            transform: translate(-100%, -100%);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  #menuMovil li {
+    padding: 20px 0;
+    -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+  }
+  #menuMovil input:checked ~ ul {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .menu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=index.css.map */
