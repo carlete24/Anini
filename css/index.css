@@ -71,7 +71,9 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-left: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .nav-principal img {
@@ -98,6 +100,7 @@ ul {
 
 .descripcion {
   float: left;
+  margin-left: 20px;
 }
 
 .imagen {
